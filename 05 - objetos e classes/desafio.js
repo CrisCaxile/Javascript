@@ -13,7 +13,7 @@ class Carros{
     }
 
     gastoPercurso(KmRodado,PreçoCombustivel){
-        const valor =  (this.gastoMedioCombustivel / PreçoCombustivel) * KmRodado;
+        const valor =  (PreçoCombustivel / this.gastoMedioCombustivel) * KmRodado;
 
         console.log('Seu gasto nesta viagem foi de',valor.toFixed(2),'R$');
     }
