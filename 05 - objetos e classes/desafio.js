@@ -4,7 +4,7 @@ Os carros possuem uma marca, uma cor e um gasto médio de combustivel por kilôm
 Crie um método que dado a quantidade de quilometros e o preço do combustível nos dê o valor gasto em reais para realizar este percurso.
 */
 
-class carros{
+class Carros{
 
     constructor(marca,cor,gastoMedioCombustivel){
         this.marca = marca;
@@ -20,6 +20,6 @@ class carros{
 
 }
 
-const carro1 = new carros('Fiat',"Branco",10);
+const carro1 = new Carros('Fiat',"Branco",10);
 
 carro1.gastoPercurso(100,4.61);
