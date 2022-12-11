@@ -13,24 +13,31 @@
     <link rel="stylesheet" href="design.css">
 
     <!--Font Roboto-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2?family= Roboto: família= Roboto:wght@100;300;500;700 & display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <section class="content">
         <h1>Pokedex</h1>
-        <ol class="pokemons">
-            <li>Bulbasaur</li>
-            <li>Ivysaur</li>
-            <li>Venusaur</li>
-            <li>Charmander</li>
-            <li>Charmeleon</li>
-            <li>Charizard</li>
+
+        <ol id="pokemonList" class="pokemons">
         </ol>
+        <div class="pagination">
+            <button id="loadMoreButton" type="button">
+                Load More
+            </button>
+        </div>
+        
+       
     </section>
 
+   <!-- Nosso JS-->
+    <script src="pokemon-model.js"></script>
+
+    <script src="poke-api.js"></script>
+
     <script src="codigos.js"></script>
+
+    
 </body>
 </html>
